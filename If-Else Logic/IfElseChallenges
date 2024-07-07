@@ -1,0 +1,42 @@
+// IfElseChallenges.java
+
+public class IfElseChallenges {
+  public static void main(String[] args) {
+    // Challenge 1: Check if a number is within a certain range
+    int num = 5;
+    int min = 1;
+    int max = 10;
+    if (num >= min && num <= max) {
+      System.out.println("The number " + num + " is within the range of " + min + " and " + max + ".");
+    } else {
+      System.out.println("The number " + num + " is outside the range of " + min + " and " + max + ".");
+    }
+
+    // Challenge 2: Check if a string contains a certain substring
+    String str = "hello world";
+    String substr = "world";
+    if (str.contains(substr)) {
+      System.out.println("The string \"" + str + "\" contains the substring \"" + substr + "\".");
+    } else {
+      System.out.println("The string \"" + str + "\" does not contain the substring \"" + substr + "\".");
+    }
+
+    // Challenge 3: Check if a person is eligible to vote based on their age
+    int age = 25;
+    if (age >= 18) {
+      System.out.println("You are eligible to vote since you are " + age + " years old.");
+    } else {
+      System.out.println("You are not eligible to vote since you are " + age + " years old.");
+    }
+
+    // Challenge 4: Check if a triangle is valid based on its side lengths
+    int a = 3;
+    int b = 4;
+    int c = 5;
+    if (a + b > c && a + c > b && b + c > a) {
+      System.out.println("The triangle with side lengths " + a + ", " + b + ", and " + c + " is valid.");
+    } else {
+      System.out.println("The triangle with side lengths " + a + ", " + b + ", and " + c + " is not valid.");
+    }
+  }
+}
